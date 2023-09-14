@@ -1,0 +1,513 @@
+/* Reset some default styles for the header */
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style the header */
+header {
+    background: rgb(23,0,36);
+background: linear-gradient(180deg, rgba(23,0,36,1) 0%, rgba(18,125,222,1) 100%, rgba(0,212,255,1) 100%);
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center content vertically */
+}
+
+/* Style the logo and school name */
+.logo {
+    display: flex; /* Align logo and school name horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.logo img {
+    width: 100px; /* Adjust the logo size as needed */
+    height: 100px; /* Adjust the logo size as needed */
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 32px; /* Larger font size for the school name */
+    margin: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 60px 0 0; /* Adjust the top margin to move the menu down */
+    padding: 0;
+}
+
+nav ul li {
+    padding: 5px;
+    font-size: 19px;
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+    font-weight: bold;
+}
+
+/* Style links on hover */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.login{
+    font-size: 20px;
+    height: 50px;
+    background-color: darkblue;
+    border-radius: 20px;
+    border-color: red;
+    color: white;
+}
+/* Style for the slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-top: 0px; /* Adjust the margin as needed */
+}
+
+/* Style for slideshow images */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 500px;
+}
+
+/* Style for slideshow animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s; /* Adjust the duration as needed */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Style for the marquee container */
+/* Style for the announcement container */
+.announcement-container {
+    display: flex;
+    align-items: center;
+    background-color: red; /* Background color */
+    color: white; /* Text color */
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for the static announcement on the left */
+.static-announcement {
+    margin-right: 20px; /* Adjust spacing between the static announcement and marquee */
+}
+
+/* Style for the marquee announcement */
+.marquee-announcement {
+    flex-grow: 1; /* Allow the marquee to take up remaining space */
+}
+
+/* Style for the marquee scrolling behavior */
+marquee {
+    white-space: nowrap; /* Prevent line breaks within the marquee */
+}
+/* Style for the "About Us" section */
+.actualbody{
+    background: rgb(23,0,36);
+background: linear-gradient(180deg, rgba(23,0,36,1) 0%, rgba(18,125,222,1) 100%, rgba(0,212,255,1) 100%);
+}
+.about-us {
+    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align content */
+}
+
+/* Style for the "About Us" content */
+.about-content {
+    flex: 1; /* Allow the content to grow and take available space */
+}
+
+.about-content h2 {
+    font-family: 'Gluten', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    color:white; /* Text color */
+}
+
+.about-content p {
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Gluten', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color:white; /* Text color */
+    margin-bottom: 20px; /* Adjust spacing between paragraphs */
+}
+
+/* Style for the school photo */
+.school-photo img {
+    max-width: 350px; /* Ensure the image doesn't exceed its container's width */
+    display: block; /* Remove any extra spacing around the image */
+    border-radius: 50%; /* Apply a circular mask to the image */
+    overflow: hidden; /* Hide any image overflow outside the circular mask */
+}
+/* Style for the photo gallery section */
+.photo-gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    text-align: left;
+    color: white;
+    font-size: 24px;
+}
+
+/* Style for the gallery images grid */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Adjust spacing between images */
+    margin-top: 20px;
+}
+
+/* Style for individual gallery items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: 100%; /* Ensure the image fills its container vertically */
+    object-fit: cover; /* Crop and center the image within its container */
+}
+/* Style for the Academics section */
+.academics {
+    padding: 20px;
+    text-align: center;
+}
+
+.academics h2 {
+    text-align: left;
+    font-size: 24px;
+    color: white;
+}
+.academics h3{
+    color: white;
+}
+
+/* Style for the timetable table */
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-weight: bold;
+}
+.timetable td{
+    color: white;
+}
+.timetable th {
+    background-color: #f2f2f2;
+}
+
+/* Color classes for subjects and days */
+.monday { background-color: #FF6F61; color: black; }
+.tuesday { background-color: #FFD166; color: black; }
+.wednesday { background-color: #45AAB8; color: black; }
+.thursday { background-color: #72CC99; color: black; }
+.friday { background-color: #6574CD; color: black; }
+
+.mathematics { background-color: #FF6F61; color: #fff; }
+.english { background-color: #FFD166; color: #fff; }
+.science { background-color: #45AAB8; color: #fff; }
+.pe { background-color: #72CC99; color: #fff; }
+.art { background-color: #6574CD; color: #fff; }
+
+
+/* Style for the Study Materials list */
+.study-materials {
+    list-style-type: none;
+    padding: 0;
+}
+/* Style for the Study Material Heading */
+/* Style for the Study Material Heading */
+
+
+
+.study-materials li {
+    margin: 10px 0;
+}
+
+.study-materials a {
+    text-decoration: none;
+    color:greenyellow; /* Link color */
+    font-weight: bold;
+}
+
+.study-materials a:hover {
+    text-decoration: underline;
+}
+/* Style for the Gallery section */
+.video-gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-gallery h2 {
+    text-align: left;
+    font-size: 24px;
+    color: white;
+}
+
+/* Style for the video container */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for individual videos */
+.video {
+    margin: 10px;
+    max-width: 1000px; /* Adjust the maximum width as needed */
+}
+
+/* Style for embedded YouTube videos */
+.video iframe {
+    width: 1000px;
+    height: 500px; /* Adjust the video height as needed */
+}
+/* code for contact us section*/
+/* Style for the Contact Us section */
+.contact {
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.contact-details, .contact-form, .map {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: lightskyblue;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-details h3, .contact-form h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust the map size as needed */
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+/* Style for the Announcements section */
+.announcements {
+    padding: 20px;
+    text-align: center; /* Center the cards horizontally */
+}
+
+.announcements h2 {
+    font-size: 24px;
+    color: white;
+}
+
+/* Style for Announcement Cards Container */
+.announcement-cards-container {
+    display: flex;
+    justify-content: space-between; /* Space cards evenly */
+    flex-wrap: wrap; /* Wrap to the next row if needed */
+    max-width: 1200px; /* Limit card container width */
+    margin: 0 auto; /* Center container */
+}
+
+/* Style for Announcement Cards */
+.announcement-card {
+    flex-basis: calc(33.33% - 20px); /* Adjust card width */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding in card width */
+}
+
+.announcement-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.announcement-date {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.announcement-summary {
+    font-size: 16px;
+    color: #555;
+}
+/* Styles for the Newsletter Popup */
+.newsletter-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+.newsletter-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+/* Style for the Footer */
+footer {
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Style for the Back to Top Button */
+.back-to-top-button {
+    position: fixed; /* Fixed position to stay on the screen */
+    bottom: 20px; /* Adjust the button's vertical position */
+    right: 20px; /* Adjust the button's horizontal position */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none; /* Initially hide the button */
+}
+
+.back-to-top-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}

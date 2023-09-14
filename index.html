@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>School Website</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Poppins:ital,wght@1,500&family=Roboto+Mono&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Gluten:wght@300&family=Poppins:ital,wght@1,500&family=Roboto+Mono&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="school-logo.png" alt="School Logo">
+            <h1>Delhi Public School</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#photo-gallery">Gallery</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#announcements">Announcements</a></li>
+            </ul>
+        </nav>
+        <button class="login">Student Login</button>
+    </header>
+    <div class="announcement-container">
+        <div class="static-announcement">
+            <span>Announcement:</span>
+        </div>
+        <div class="marquee-announcement">
+            <marquee behavior="scroll" direction="left" scrollamount="6">
+                Parent-Teacher Meeting: Join us for a parent-teacher meeting on September 20th, 2023, to discuss your child's progress.|
+                Upcoming Exam Schedule: The final exam schedule for this semester has been posted on the notice board. Please review it.|
+                School Picnic: Get ready for a fun-filled school picnic on October 5th. Don't forget to bring your picnic essentials!|
+                Book Fair: Our annual book fair will be held in the school library from October 15th to 20th. Explore a wide range of books!|
+                Sports Day: Mark your calendars for the school's Sports Day on November 12th. Let's celebrate sportsmanship!|
+
+
+            </marquee>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="image1.jpeg" alt="Image 1">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image4.jpg" alt="Image 3">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image5.jpg" alt="Image 3">
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
+        }
+    </script>
+    <div class="actualbody">
+    <section id="about-us" class="about-us">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Delhi Public School, where education meets excellence. Our school has been dedicated to providing quality education for over 50 years.</p>
+            <p>Our mission is to nurture the intellectual, physical, and emotional growth of our students, preparing them to be responsible citizens and lifelong learners.</p>
+            <p>At DPS, we offer a comprehensive curriculum, a caring and supportive faculty, and a range of extracurricular activities to enrich the educational experience of our students.</p>
+            <p>We are committed to creating a safe and inclusive learning environment where every student can thrive. Come join us on this journey of knowledge and discovery!</p>
+        </div>
+        <div class="school-photo">
+            <img src="school-photo.jpg" alt="School Photo">
+        </div>
+    </section>
+    <section id="photo-gallery" class="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-item">
+                <img src="gallery-image1.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image3.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image4.jpg" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image5.jpg" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image6.jpeg" alt="Gallery Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image7.jpeg" alt="Gallery Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="gallery-image8.jpeg" alt="Gallery Image 8">
+            </div>
+        </div>
+    </section>
+    <section id="video-gallery" class="video-gallery">
+        <h2>Video Gallery</h2>
+        <div class="video-container">
+            <!-- YouTube Video Embed -->
+            <div class="video">
+                <iframe width="1000" height="505" src="https://www.youtube.com/embed/K4DyBUG242c?si=fxFjQbOc7z8WLcID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Additional Videos (if any) -->
+            <div class="video">
+                <!-- Add more video embeds here -->
+            </div>
+        </div>
+    </section>
+    <section id="academics" class="academics">
+        <h2>Academics</h2>
+        
+        <!-- Timetable Table -->
+        <h3>Class 1st Timetable</h3>
+        <table class="timetable">
+            <tr>
+                <th class="time">Time Slot</th>
+                <th class="monday">Monday</th>
+                <th class="tuesday">Tuesday</th>
+                <th class="wednesday">Wednesday</th>
+                <th class="thursday">Thursday</th>
+                <th class="friday">Friday</th>
+            </tr>
+            <tr>
+                <td class="time">8:00 AM - 8:45 AM</td>
+                <td class="mathematics">Math</td>
+                <td class="english">Eng</td>
+                <td class="science">Sci</td>
+                <td class="pe">PE</td>
+                <td class="art">Art</td>
+            </tr>
+            <tr>
+                <td class="time">9:00 AM - 9:45 AM</td>
+                <td class="english">Eng</td>
+                <td class="mathematics">Math</td>
+                <td class="english">Eng</td>
+                <td class="science">Sci</td>
+                <td class="mathematics">Math</td>
+            </tr>
+            <tr>
+                <td class="time">10:00 AM - 10:45 AM</td>
+                <td class="science">Sci</td>
+                <td class="pe">PE</td>
+                <td class="mathematics">Math</td>
+                <td class="english">Eng</td>
+                <td class="pe">PE</td>
+            </tr>
+            <tr>
+                <td class="time">11:00 AM - 11:45 AM</td>
+                <td class="art">Art</td>
+                <td class="science">Sci</td>
+                <td class="pe">PE</td>
+                <td class="mathematics">Math</td>
+                <td class="english">Eng</td>
+            </tr>
+        </table>
+        <!-- Study Materials -->
+        <h3 class="study-material-heading">Study Materials</h3>
+        <ul class="study-materials animated">
+            <li><a href="study-material1.pdf" target="_blank">Study Material 1 (PDF)</a></li>
+            <li><a href="study-material2.pdf" target="_blank">Study Material 2 (PDF)</a></li>
+            <!-- Add more study materials as needed -->
+        </ul>        
+    </section>
+    <!--contact us section-->
+    <section id="contact-us" class="contact">
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h3>Our Address</h3>
+            <p>123 School Street</p>
+            <p>City, State 12345</p>
+            
+            <h3>Phone Numbers</h3>
+            <p>Main Office: (123) 456-7890</p>
+            <p>Admissions: (123) 555-6789</p>
+            
+            <h3>Email Addresses</h3>
+            <p>General Inquiries: info@school.com</p>
+            <p>Admissions: admissions@school.com</p>
+        </div>
+        
+        <!-- Contact Form (Frontend Only) -->
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <!-- Google Maps Integration (Optional) -->
+        <div class="map">
+            <!-- Replace with your Google Maps iframe embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896790.1336510463!2d76.52583954257014!3d28.59718294558998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2e002122549%3A0x8606618bbf3b0562!2sDelhi%20Public%20School!5e0!3m2!1sen!2sin!4v1694698368627!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="announcements" class="announcements">
+        <h2>Announcements</h2>
+    
+        <!-- Announcement Cards Container -->
+        <div class="announcement-cards-container">
+            <!-- Announcement Card 1 -->
+            <div class="announcement-card">
+                <h3 class="announcement-title">Announcement 1</h3>
+                <p class="announcement-date">September 15, 2023</p>
+                <p class="announcement-summary">Parent-Teacher Meeting: Join us for a parent-teacher meeting on September 20th, 2023, to discuss your child's progress.</p>
+            </div>
+    
+            <!-- Announcement Card 2 -->
+            <div class="announcement-card">
+                <h3 class="announcement-title">Announcement 2</h3>
+                <p class="announcement-date">September 10, 2023</p>
+                <p class="announcement-summary">Upcoming Exam Schedule: The final exam schedule for this semester has been posted on the notice board. Please review it.</p>
+            </div>
+    
+            <!-- Announcement Card 3 -->
+            <div class="announcement-card">
+                <h3 class="announcement-title">Announcement 3</h3>
+                <p class="announcement-date">September 5, 2023</p>
+                <p class="announcement-summary">Sports Day: Mark your calendars for the school's Sports Day on November 12th. Let's celebrate sportsmanship!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Popup (hidden by default) -->
+<div id="newsletter-popup" class="newsletter-popup">
+    <div class="newsletter-content">
+        <span class="close" onclick="closeNewsletterPopup()">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest news and events at our school. Subscribe to our newsletter.</p>
+        <form>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+<script>// JavaScript to show/hide the newsletter popup
+    function openNewsletterPopup() {
+        document.getElementById("newsletter-popup").style.display = "block";
+    }
+    
+    function closeNewsletterPopup() {
+        document.getElementById("newsletter-popup").style.display = "none";
+    }
+    
+    // Display the newsletter popup after a delay (e.g., 5 seconds)
+    setTimeout(openNewsletterPopup, 5000);
+    </script>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Vinayak Soni. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <button id="back-to-top-button" class="back-to-top-button" onclick="scrollToTop()">&#9650;</button>
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Add smooth scrolling behavior
+            });
+        }
+        
+        // Show or hide the "Back to Top" button based on scroll position
+        window.onscroll = function() {
+            var button = document.getElementById("back-to-top-button");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block"; // Show the button when not at the top
+            } else {
+                button.style.display = "none"; // Hide the button when at the top
+            }
+        }
+        </script>
+        
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+</body>
+</html>
