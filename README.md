@@ -1,4 +1,4 @@
-# dps_website
+Sample School Website with Only Front-end
 ![Screenshot (84)](https://github.com/vinayaksoni1729/dps_website/assets/113187290/67e9a684-7fd4-4e73-862b-e7ae59d97dc1)
 ![Screenshot (85)](https://github.com/vinayaksoni1729/dps_website/assets/113187290/c9991ad5-8ed8-4d1a-873c-b0841851d215)
 ![Screenshot (86)](https://github.com/vinayaksoni1729/dps_website/assets/113187290/50bfb1ad-38a3-452f-9ad8-6d3c9b8ef105)
